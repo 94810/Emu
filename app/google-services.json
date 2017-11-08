@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "510101978860",
+    "firebase_url": "https://emufirebaseproject-c2306.firebaseio.com",
+    "project_id": "emufirebaseproject-c2306",
+    "storage_bucket": "emufirebaseproject-c2306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510101978860:android:0af7ddc4dfc6f0c6",
+        "android_client_info": {
+          "package_name": "io.studentproject.emu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510101978860-729bp41phlh2kddqnm2t4h61cf1l5gt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.studentproject.emu",
+            "certificate_hash": "8bfd51feaa4dc3b90921a7cd27a49048774c8856"
+          }
+        },
+        {
+          "client_id": "510101978860-1fdsvh5qh2j5dfmdqb6pgm3qdb628h32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG-Pdj1mw4h7s2lwDbF1nA0II6p6KG42s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510101978860-1fdsvh5qh2j5dfmdqb6pgm3qdb628h32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
