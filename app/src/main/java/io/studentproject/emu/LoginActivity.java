@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mLoginFormView;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private static final String TAG = "LOG_EMU";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,12 +82,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             public void  onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if(user != null){
-                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    //Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                 }else {
-                    Log.d(TAG, "onAuthStateChanged:signed_out");
+                    //Log.d(TAG, "onAuthStateChanged:signed_out");
                 }
             }
-        }
+        };
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
