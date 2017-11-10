@@ -22,6 +22,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     private EditText email;
     private EditText pass;
     private EditText confPass;
+
     private TextView alreadyR;
 
     private Button register;
@@ -50,7 +51,9 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         progressDialog = new ProgressDialog(this);
 
         register = (Button) findViewById(R.id.register);
+
         register.setOnClickListener(this);
+        alreadyR.setOnClickListener(this);
     }
 
 

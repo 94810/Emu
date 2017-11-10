@@ -27,7 +27,7 @@
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFFFF"
+        android:textColor="#FFFFFF"
         android:hint="Email"/>
     <TextView
         android:layout_width="wrap_content"
@@ -38,12 +38,20 @@
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
         android:hint="Mot de passe"/>
     <Button
         android:id="@+id/envoyer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Envoyer"/>
+    <TextView
+        android:id="@+id/registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:text="Cliquez ici pour vous enregistrer"/>
 
 </LinearLayout>
 </android.support.constraint.ConstraintLayout>

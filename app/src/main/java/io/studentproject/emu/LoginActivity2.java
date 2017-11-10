@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +23,8 @@ public class LoginActivity2 extends AppCompatActivity implements View.OnClickLis
     private EditText mail;
     private EditText pass;
     private Button send;
+    private TextView registered;
+
     private ProgressDialog progressDialog;
 
     private FirebaseAuth firebaseAuth;
@@ -43,10 +46,12 @@ public class LoginActivity2 extends AppCompatActivity implements View.OnClickLis
         mail = (EditText) findViewById(R.id.email);
         pass = (EditText) findViewById(R.id.password);
         send = (Button) findViewById(R.id.envoyer);
+        registered = (TextView) findViewById(R.id.registered);
 
         progressDialog = new ProgressDialog(this);
 
         send.setOnClickListener(this);
+        registered.setOnClickListener(this);
 
     }
 
@@ -54,6 +59,11 @@ public class LoginActivity2 extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         if(view == send){
             userLogin();
+        }
+        if (view == registered){
+            finish();
+            Intent intent = new Intent(getApplicationContext(), RegistrationActivity.class);
+            startActivity(intent);
         }
     }
 
