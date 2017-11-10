@@ -59,9 +59,12 @@
             android:layout_height="wrap_content"
             android:text="Enregistrement"/>
         <TextView
+            android:layout_marginTop="20dp"
             android:id="@+id/alreadyRegistered"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"
             android:text="Déjà un compte ? Cliquez ici"/>
 
     </LinearLayout>
